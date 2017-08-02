@@ -11,7 +11,7 @@ class App extends Component {
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>
-            {<Link to="/"> 📸 Redux Photo Gallery </Link>}
+            {<Link to="/"> <span role="img" aria-label="camera">📸</span> Redux Photo Gallery </Link>}
           </h2>
         </div>
       </div>

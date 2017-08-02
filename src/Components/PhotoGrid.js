@@ -4,7 +4,7 @@ class PhotoGrid extends Component {
 	render() {
 		return (
 			<div>
-				<p>👪 I'm the PhotoGrid</p>
+				<p><span role="img" aria-label="people">👪</span> I'm the PhotoGrid</p>
 			</div>
 		)
 	}

@@ -13,11 +13,11 @@ import PhotoGrid from './Components/PhotoGrid'
 import Single from './Components/Single'
 
 const router = (
-		<div>
+		<nav>
 			<App/>
 			<Route exact path="/" component={PhotoGrid}> </Route>
 			<Route path="/view/:postId" component={Single}> </Route>
-		</div>
+		</nav>
 )
 
 ReactDOM.render(
