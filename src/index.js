@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import registerServiceWorker from './registerServiceWorker'
 
-import { Route} from 'react-router'
+import { Route} from 'react-router-dom'
 import { Provider } from 'react-redux'
 import { ConnectedRouter } from 'react-router-redux'
 import store, { history } from './Redux/Store'
@@ -14,9 +14,16 @@ import Single from './Components/Single'
 
 const router = (
 		<nav>
-			<App/>
-			<Route exact path="/" component={PhotoGrid}> </Route>
-			<Route path="/view/:postId" component={Single}> </Route>
+			<Route exact path="/" render={() => (
+					<App>
+						<PhotoGrid />
+					</App>
+			)}/>
+			<Route path="/view/:postId" render={({match}) => (
+					<App>
+						<Single match={match}/>
+					</App>
+			)}/>
 		</nav>
 )
 

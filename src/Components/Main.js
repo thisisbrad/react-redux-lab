@@ -14,6 +14,7 @@ class App extends Component {
             {<Link to="/"> <span role="img" aria-label="camera">📸</span> Redux Photo Gallery </Link>}
           </h2>
         </div>
+        {React.cloneElement({...this.props}.children, {...this.props})}
       </div>
     );
   }
