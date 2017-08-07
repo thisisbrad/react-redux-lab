@@ -19,7 +19,8 @@ class Comments extends Component {
 		const {postId} = this.props.match.params // deconstruce route params 
 		const author = this.refs.author.value
 		const comment = this.refs.comment.value
-		console.log('hey', postId, author, comment)
+		// console.log('hey', postId, author, comment)
+		this.props.addComment(postId, author, comment)
 	};
 
 	render() {
