@@ -16,7 +16,12 @@ const defaultState = {
 
 export const history = createHistory()
 const middleware = routerMiddleware(history)
+//applyMiddleware(middleware),
 
-const store = createStore(rootReducer, defaultState, applyMiddleware(middleware))
+const store = createStore(
+	rootReducer, 
+	defaultState, 
+	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+)
 
 export default store;

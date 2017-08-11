@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class Comments extends Component {
-	
+
 	renderComment = (comment, i) => {
 		return (
 			<div key={i}> 

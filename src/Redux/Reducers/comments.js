@@ -4,7 +4,7 @@ function comments(state=[], action) {
 				console.log(action)
 				return state
 			default:
-				return state;
+				return state
 		return state
 	}
 }
