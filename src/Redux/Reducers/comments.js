@@ -1,9 +1,19 @@
 function postComments(state=[], action) {
+		// once passed on to this function 'state' is now 
+		// just the comments for a single post
 		switch(action.type) {
-			case 'ADD_COMMENT': 
-				return state
-			case 'REMOVE_COMMENT': 
-				return state
+			case 'ADD_COMMENT':
+				console.log('state: ', state)
+				console.log('action: ', action)
+				return [ ...state, {
+					user: action.author,
+					text: action.comment
+				}]
+			case 'REMOVE_COMMENT':
+				return [
+					...state.slice(0,action.i), // grabs all comments before 'i'
+					...state.slice(action.i+1) // grabs all comments after 'i'
+				]
 			default: 
 				return state
 		}

@@ -17,7 +17,6 @@ class Single extends Component {
 		// if there are no comments for the post set it to an empty array
 		const postComments = comments[postId] || [] 
 
-		console.log(post)
 		return (
 			<div>
 				<p><span role="img" aria-label="person">💁</span> I'm the Single Photo</p>
