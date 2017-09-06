@@ -15,7 +15,7 @@ class Single extends Component {
 		const post = posts[i] // get the single post using 'i'
 		// grab the comments of the post based on postId from route params
 		// if there are no comments for the post set it to an empty array
-		const postComments = comments[postId] || [] 
+		const postComments = comments[postId] || []
 
 		return (
 			<div>
