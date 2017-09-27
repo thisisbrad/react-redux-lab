@@ -15,9 +15,11 @@ const defaultState = {
 	posts
 };
 
+// Creating the browser history and attaching it to react-router-redux
 export const history = createHistory();
 const middleware = routerMiddleware(history);
 
+// Creates the Redux store and added Redux debug tools
 const store = createStore(
 	rootReducer, 
 	defaultState, 
