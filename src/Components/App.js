@@ -4,7 +4,12 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<p>Hello World from App</p>
+				<h1>Hello World from App</h1>
+				{/* 
+						This is where React-Router is passing down 
+						the child component. 
+				*/}
+				{React.cloneElement(this.props.children, this.props)}
 			</div>
 		);
 	}
