@@ -1,19 +1,13 @@
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
-import * as actionCreators from '../Redux/Actions'
-import Main from './Main'
+import React, { Component } from 'react';
 
-function mapStateToProps (state) {
-  return {
-    posts: state.posts,
-    comments: state.comments
-  }
+class App extends Component {
+	render() {
+		return (
+			<div>
+				<p>hey</p>
+			</div>
+		);
+	}
 }
 
-function mapDispatchToProps (dispatch) {
-  return bindActionCreators(actionCreators, dispatch)
-}
-
-const App = connect(mapStateToProps, mapDispatchToProps)(Main)
-
-export default App
+export default App;
