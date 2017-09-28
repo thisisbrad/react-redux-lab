@@ -6,10 +6,10 @@ class App extends Component {
 			<div>
 				<h1>Hello World from App</h1>
 				{/* 
-						This is where React-Router is passing down 
-						the child component. 
+						This is where 'react-router' is passing down 
+						the child component.
 				*/}
-				{React.cloneElement(this.props.children, this.props)}
+				{ React.cloneElement(this.props.children, this.props) }
 			</div>
 		);
 	}
