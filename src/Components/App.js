@@ -1,10 +1,21 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class App extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Hello World from App</h1>
+				<h1>
+					{
+						<Link to="/">
+							{' '}
+							<span role="img" aria-label="camera">
+								📸
+							</span>{' '}
+							Redux Photo Gallery{' '}
+						</Link>
+					}
+				</h1>
 				{/* 
 						This is where 'react-router' is passing down 
 						the child component.
