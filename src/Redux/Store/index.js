@@ -21,8 +21,8 @@ const middleware = routerMiddleware(history);
 
 // Creates the Redux store and added Redux debug tools
 const store = createStore(
-	rootReducer, 
-	defaultState, 
+	rootReducer,
+	defaultState,
 	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 

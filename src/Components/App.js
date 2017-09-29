@@ -9,7 +9,7 @@ class App extends Component {
 						This is where 'react-router' is passing down 
 						the child component.
 				*/}
-				{ React.cloneElement(this.props.children, this.props) }
+				{React.cloneElement(this.props.children, this.props)}
 			</div>
 		);
 	}

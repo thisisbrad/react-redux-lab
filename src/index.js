@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
@@ -8,6 +8,7 @@ import App from './Components/App';
 import Single from './Components/Single';
 import PhotoGrid from './Components/PhotoGrid';
 
+//prettier-ignore
 const router = (
 	<Router>
 		<nav>
