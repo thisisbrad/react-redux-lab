@@ -19,11 +19,8 @@ const defaultState = {
 export const history = createHistory();
 const middleware = routerMiddleware(history);
 
+// Addes Redux Devtools
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-// const enhancer = compose(
-// 	applyMiddleware(middleware),
-// 	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-// );
 
 // Creates the Redux store and added Redux debug tools
 const store = createStore(

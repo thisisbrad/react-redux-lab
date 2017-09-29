@@ -18,14 +18,14 @@ const router = (
 		<ConnectedRouter history={history}>
 			<nav>
 				<Route exact path="/" render={() => (
-						<App>
-							<PhotoGrid />
-						</App>
+					<App>
+						<PhotoGrid />
+					</App>
 				)}/>
 				<Route path="/view/:postId" render={({match}) => (
-						<App>
-							<Single match={match}/>
-						</App>
+					<App>
+						<Single match={match} />
+					</App>
 				)}/>
 			</nav>
 		</ConnectedRouter>
@@ -33,5 +33,4 @@ const router = (
 )
 
 ReactDOM.render(router, document.getElementById('root'));
-
 registerServiceWorker();
