@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
 import { Route } from 'react-router-dom';
@@ -11,6 +10,8 @@ import store, { history } from './Redux/Store';
 import App from './Components/App';
 import Single from './Components/Single';
 import PhotoGrid from './Components/PhotoGrid';
+
+import './index.css';
 
 //prettier-ignore
 const router = (
