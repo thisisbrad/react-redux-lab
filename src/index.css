@@ -9,3 +9,8 @@ body {
 	float: left;
 	margin: 1em;
 }
+
+.photo-grid img {
+	width: 20em;
+	height: 20em;
+}
