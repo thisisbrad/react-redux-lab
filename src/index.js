@@ -8,7 +8,7 @@ import { ConnectedRouter } from 'react-router-redux';
 import { Provider } from 'react-redux';
 import store, { history } from './Redux/Store';
 
-import Main from './Components/Main';
+import App from './Components/App';
 import Single from './Components/Single';
 import PhotoGrid from './Components/PhotoGrid';
 
@@ -18,14 +18,14 @@ const router = (
 		<ConnectedRouter history={history}>
 			<nav>
 				<Route exact path="/" render={() => (
-					<Main>
+					<App>
 						<PhotoGrid />
-					</Main>
+					</App>
 				)}/>
 				<Route path="/view/:postId" render={({match}) => (
-					<Main>
+					<App>
 						<Single match={match} />
-					</Main>
+					</App>
 				)}/>
 			</nav>
 		</ConnectedRouter>
