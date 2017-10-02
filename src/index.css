@@ -12,6 +12,19 @@ body {
 	background-color: #eee;
 }
 
+.single-photo figure {
+	width: calc(100%/2 - 2em);
+	float: left;
+	margin: 1em;
+	height: 31em;
+	background-color: #eee;
+}
+
+.single-photo img {
+	width: 20em;
+	height: 20em;
+}
+
 .photo-grid img {
 	width: 20em;
 	height: 20em;
