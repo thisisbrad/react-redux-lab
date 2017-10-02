@@ -8,6 +8,7 @@ body {
 	width: calc(100%/3 - 2em);
 	float: left;
 	margin: 1em;
+	height: 31em;
 }
 
 .photo-grid img {
