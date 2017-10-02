@@ -14,15 +14,26 @@ body {
 
 .single-photo figure {
 	width: calc(100%/2 - 2em);
-	float: left;
 	margin: 1em;
-	height: 31em;
+	/*float: left;*/
+	height: 30em;
 	background-color: #eee;
 }
 
+.single-photo .comments {
+	width: calc(100%/2 - 2em);
+	margin: 1em;
+	height: 31em;
+	background-color: #555;
+}
+
 .single-photo img {
-	width: 20em;
-	height: 20em;
+	display: block;
+	margin: auto;
+	height: auto;
+	max-height: 100%;
+	width: auto;
+	max-width: 100%;
 }
 
 .photo-grid img {
