@@ -14,17 +14,18 @@ body {
 
 .single-photo figure {
 	width: calc(100%/2 - 2em);
-	margin: 1em;
-	/*float: left;*/
 	height: 30em;
-	background-color: #eee;
+	margin: 1em;
+	float: left;
+	background-color: #f2f2f2;
 }
 
 .single-photo .comments {
 	width: calc(100%/2 - 2em);
-	margin: 1em;
 	height: 31em;
-	background-color: #555;
+	margin: 1em;
+	float: left;
+	background-color: #eee;
 }
 
 .single-photo img {
